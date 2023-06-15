@@ -8,16 +8,7 @@ function HeroSection() {
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>State Farm Recruiting</h1>
-      <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          GET STARTED
-        </Button>
       </div>
-    </div>
   );
 }
 

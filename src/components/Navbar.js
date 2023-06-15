@@ -42,15 +42,6 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Apply Now
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
                 to='/products'
                 className='nav-links'
                 onClick={closeMobileMenu}
@@ -58,18 +49,7 @@ function Navbar() {
                 Information Form
               </Link>
             </li>
-
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Login
-              </Link>
-            </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Login</Button>}
         </div>
       </nav>
     </>

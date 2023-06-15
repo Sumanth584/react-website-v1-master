@@ -4,6 +4,7 @@ import '../../SignUp.css';
 const SignupForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
@@ -16,6 +17,14 @@ const SignupForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform form submission or data handling here
+    if (username.endsWith('@statefarm.com')) {
+      // Username is valid, perform form submission or data handling here
+      console.log('Username is valid:', username);
+      console.log('Password:', password);
+    } else {
+      // Username is invalid, show an error message or take appropriate action
+      setErrorMessage('Invalid username');
+    }
   };
 
   return (
